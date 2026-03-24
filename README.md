@@ -23,7 +23,8 @@ The immediate challenge is to increase the stability of the application by maint
 
 ## Users
 
-To trial the new JOI software 5 people from the JOI accounts team have agreed to test the service and share their energy data.
+To trial the new JOI software 5 people from the JOI accounts team have agreed to test the service and share their energy
+data.
 
 | User    | Smart Meter ID  | Power Supplier        |
 | ------- | --------------- | --------------------- |
@@ -38,16 +39,22 @@ These values are used in the code and in the following examples too.
 ## Requirements
 
 The project requires [Python 3.7](https://www.python.org/downloads/release/python-370/) or higher and
-the [PIP](https://pip.pypa.io/en/stable/) package manager.
+[Poetry](https://python-poetry.org/) for dependency management.
 
 ## Useful Python commands
 
 ### Installation
 
-Install the project dependencies
+First, install Poetry if you haven't already:
 
 ```console
-$ python3.7 -m pip install --requirement requirements.txt
+$ curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Then, install the project dependencies:
+
+```console
+$ poetry install
 ```
 
 ### Run the tests
@@ -55,7 +62,7 @@ $ python3.7 -m pip install --requirement requirements.txt
 Run all tests
 
 ```console
-$ python3.7 -m unittest
+$ poetry run python -m unittest
 ```
 
 ### Run the application
@@ -63,7 +70,7 @@ $ python3.7 -m unittest
 Run the application which will be listening on port `5000`.
 
 ```console
-$ python3.7 src/app.py
+$ poetry run python src/app.py
 ```
 
 ## API
