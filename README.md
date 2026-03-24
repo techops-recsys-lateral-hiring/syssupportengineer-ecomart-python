@@ -23,8 +23,7 @@ The immediate challenge is to increase the stability of the application by maint
 
 ## Users
 
-To trial the new JOI software 5 people from the JOI accounts team have agreed to test the service and share their energy
-data.
+To trial the new JOI software 5 people from the JOI accounts team have agreed to test the service and share their energy data.
 
 | User    | Smart Meter ID  | Power Supplier        |
 | ------- | --------------- | --------------------- |
